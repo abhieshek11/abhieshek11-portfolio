@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Kumar - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="profile.png">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body id="top"></body>
+<nav class="navbar">
+    <div class="container">
+        <a href="#top" class="logo">Abhishek Kumar</a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Abhishek Kumar</h1>
+                <h2>Software Developer | AI Enthusiast | Problem Solver</h2>
+                <p>Passionate about creating innovative solutions through code and artificial intelligence.
+                    Currently pursuing B.Tech in CSE with specialization in AI.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                    <a href="https://drive.google.com/file/d/1KjirHuPKOOKiIGWVkaL8d14zoKsLnWoz/view?usp=sharing"
+                        class="btn outline" target="_blank" rel="noopener noreferrer">Download Resume</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-circle">
+                    <div class="profile-ring"></div>
+                    <div class="profile-ring-2"></div>
+                    <img src="profile.png" alt="Abhishek Kumar">
+                    <div class="profile-glow"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="bio">
+                <p>I am a dedicated Computer Science student specializing in Artificial Intelligence at Greater
+                    Noida Institute of Technology. Expected to graduate in 2026, I am passionate about leveraging
+                    technology to solve real-world problems.</p>
+            </div>
+
+            <!-- Achievements Carousel -->
+            <div class="achievements-section">
+                <h3 class="achievements-title">My Achievements</h3>
+                <div class="carousel-container">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-slide active">
+                            <div class="achievement-card">
+                                <img src="img1.jpg" alt="Student of the Year 2024-2025" class="achievement-image">
+                                <div class="achievement-info">
+                                    <h4>Student of the Year 2024-2025</h4>
+                                    <p>Awarded the title of Student of the Year 2024-2025 by CSDC in recognition of
+                                        outstanding academic performance and overall contribution.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="achievement-card">
+                                <img src="img2.jpg" alt="World Youth Skills Day 2025 at FICCI"
+                                    class="achievement-image">
+                                <div class="achievement-info">
+                                    <h4>World Youth Skills Day 2025 Delegate</h4>
+                                    <p>Selected to participate in the World Youth Skills Day 2025 event, held on 15th
+                                        July 2025 at FICCI, New Delhi. This opportunity offered valuable exposure to
+                                        industry leaders and skill development initiatives, contributing to my personal
+                                        and professional growth.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="carousel-btn prev-btn" onclick="changeSlide(-1)">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next-btn" onclick="changeSlide(1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="carousel-dots">
+                        <span class="dot active" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <i class="fab fa-aws"></i>
+                    <div>
+                        <h4><a href="https://drive.google.com/file/d/1JypsdE45gdFXnpG6Tu7GSHnSSzTZq9ps/view?usp=sharing"
+                                target="_blank" rel="noopener noreferrer">AWS Cloud Practitioner Essentials</a></h4>
+                        <p>AWS Certification</p>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <i class="fas fa-brain"></i>
+                    <div>
+                        <h4><a href="https://drive.google.com/file/d/1bOjfb_L6FwJneRX1Tyc_tZp3I5_ouVHg/view?usp=sharing"
+                                target="_blank" rel="noopener noreferrer">Natural Language Processing & Computer
+                                Vision</a></h4>
+                        <p>IBM SkillsBuild Certification</p>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <div>
+                        <h4><a href="https://drive.google.com/file/d/1_SMlHeaT6X7CVOsB4-re8KQiflSpYxF8/view?usp=sharing"
+                                target="_blank" rel="noopener noreferrer">Introduction to Cybersecurity</a></h4>
+                        <p>CISCO Networking Academy Certification</p>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <i class="fas fa-code"></i>
+                    <div>
+                        <h4><a href="https://drive.google.com/file/d/1bpP-JNeEA5CAUOo2kvZBZNNe--C7fmrf/view?usp=sharing"
+                                target="_blank" rel="noopener noreferrer">C & C++ Programming</a></h4>
+                        <p>IIT Kanpur Student Development Program</p>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <i class="fab fa-python"></i>
+                    <div>
+                        <h4><a href="https://drive.google.com/file/d/1rjtG_bMBe7FPpdE62gjjCJa9orQRnUHl/view?usp=sharing"
+                                target="_blank" rel="noopener noreferrer">Python Developer</a></h4>
+                        <p>Sololearn Certified</p>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <i class="fas fa-trophy"></i>
+                    <div>
+                        <h4><a href="https://drive.google.com/file/d/1ULfHjXsv_T1Ty6GQXTxDj0qbs_zvsZEU/view?usp=sharing"
+                                target="_blank" rel="noopener noreferrer">Student of the Semester</a></h4>
+                        <p>Corporate Skill Development Centre - GNIOT</p>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <i class="fab fa-google"></i>
+                    <div>
+                        <h4>Champion Tier</h4>
+                        <p>Google Arcade Program</p>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <i class="fab fa-google"></i>
+                    <div>
+                        <h4><a href="https://drive.google.com/file/d/15qDJ9d_2WwylKzQ4gw8ldpLYY-7HHZoo/view?usp=sharing"
+                                target="_blank" rel="noopener noreferrer">Bring AI to Work Workshop</a></h4>
+                        <p>Google Workshop</p>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <i class="fab fa-hackerrank"></i>
+                    <div>
+                        <h4><a href="https://drive.google.com/file/d/1QCrZX2HU4BufiFsQCQ-pdukNU2swsEki/view?usp=sharing"
+                                target="_blank" rel="noopener noreferrer">Java (Basics)</a></h4>
+                        <p>HackerRank Certification</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="about-content">
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <i class="fab fa-python"></i>
+                    <div>
+                        <h4>Python</h4>
+                        <p>Advanced Programming & AI/ML</p>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <i class="fab fa-java"></i>
+                    <div>
+                        <h4>Java</h4>
+                        <p>Object-Oriented Programming</p>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <i class="fas fa-code"></i>
+                    <div>
+                        <h4>C++</h4>
+                        <p>System Programming & DSA</p>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <i class="fas fa-terminal"></i>
+                    <div>
+                        <h4>C</h4>
+                        <p>Low-Level Programming</p>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <i class="fab fa-r-project"></i>
+                    <div>
+                        <h4>R</h4>
+                        <p>Statistical Computing & Analysis</p>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <i class="fab fa-html5"></i>
+                    <div>
+                        <h4>HTML/CSS</h4>
+                        <p>Modern Web Development</p>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <i class="fab fa-js-square"></i>
+                    <div>
+                        <h4>JavaScript</h4>
+                        <p>Frontend & Backend Development</p>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <i class="fab fa-react"></i>
+                    <div>
+                        <h4>React</h4>
+                        <p>Component-Based UI Development</p>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <i class="fab fa-node-js"></i>
+                    <div>
+                        <h4>Node.js</h4>
+                        <p>Server-Side JavaScript</p>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <i class="fas fa-server"></i>
+                    <div>
+                        <h4>Express.js</h4>
+                        <p>Web Application Framework</p>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <i class="fas fa-database"></i>
+                    <div>
+                        <h4>Database Management</h4>
+                        <p>SQL & NoSQL Databases</p>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <i class="fas fa-brain"></i>
+                    <div>
+                        <h4>Machine Learning</h4>
+                        <p>AI Models & Deep Learning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Real-Time Face Recognition System</h3>
+                <p>Advanced facial recognition system using deep learning for real-time face detection and
+                    identification.</p>
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>OpenCV</span>
+                    <span>TensorFlow</span>
+                    <span>Deep Learning</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Personal Portfolio Website</h3>
+                <p>Modern, responsive portfolio website showcasing projects and skills with interactive elements.
+                </p>
+                <div class="tech-stack">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>GrabIT – Modern E-commerce Platform</h3>
+                <p>A sleek, animated e-commerce platform built with Next.js 14 and Tailwind CSS, offering seamless
+                    shopping with real-time search, persistent carts, and beautiful Framer Motion animations.</p>
+                <div class="tech-stack">
+                    <span>Next.js 14</span>
+                    <span>TypeScript</span>
+                    <span>Tailwind CSS</span>
+                    <span>Framer Motion</span>
+                    <span>Zustand</span>
+                    <span>React Hook Form</span>
+                    <span>React Hot Toast</span>
+                    <span>Netlify</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>StudentSync – Attendance Management System</h3>
+                <p>Comprehensive web-based student attendance management system with separate portals for students and
+                    administrators, featuring real-time tracking, reporting, and email notifications.</p>
+                <div class="tech-stack">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>Express.js</span>
+                    <span>MongoDB</span>
+                    <span>JWT</span>
+                    <span>Bootstrap</span>
+                    <span>Nodemailer</span>
+                    <span>Mongoose</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-content">
+            <div class="contact-form-section">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="from_name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="from_email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary" id="submitBtn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading" style="display: none;">Sending...</span>
+                    </button>
+                </form>
+                <div id="formMessage" class="form-message"></div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:abhieshek11@gmail.com">Email Me</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+918130168024">Call Me</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://linkedin.com/in/abhieshek11" target="_blank">LinkedIn Profile</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/abhieshek11" target="_blank">GitHub Profile</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-hackerrank"></i>
+                    <a href="https://hackerrank.com/profile/abhieshek11" target="_blank">HackerRank Profile</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-certificate"></i>
+                    <a href="https://credly.com/users/abhieshek11" target="_blank">Credly Badges</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/abhisk02/" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2025 Crafted with passion, served with pixels - Abhishek Kumar</p>
+    </div>
+</footer>
+
+
+
+<script>
+
+
+    // Achievements Carousel Functionality
+    let currentSlideIndex = 0;
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.dot');
+
+    // Initialize carousel on page load
+    document.addEventListener('DOMContentLoaded', function () {
+        if (slides.length > 0) {
+            showSlide(0); // Show first slide
+        }
+    });
+
+    function showSlide(index) {
+        // Hide all slides
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+
+        // Show current slide
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
+    }
+
+    function changeSlide(direction) {
+        currentSlideIndex += direction;
+
+        if (currentSlideIndex >= slides.length) {
+            currentSlideIndex = 0;
+        } else if (currentSlideIndex < 0) {
+            currentSlideIndex = slides.length - 1;
+        }
+
+        showSlide(currentSlideIndex);
+    }
+
+    function currentSlide(index) {
+        currentSlideIndex = index - 1;
+        showSlide(currentSlideIndex);
+    }
+
+    // Auto-play carousel (optional)
+    setInterval(() => {
+        changeSlide(1);
+    }, 5000); // Change slide every 5 seconds
+
+    // Initialize EmailJS
+    emailjs.init('g03leKlhjEWSy9Kqb');
+
+    // Contact Form Functionality
+    const contactForm = document.getElementById('contactForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const formMessage = document.getElementById('formMessage');
+
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        // Show loading state
+        submitBtn.disabled = true;
+        document.querySelector('.btn-text').style.display = 'none';
+        document.querySelector('.btn-loading').style.display = 'inline';
+        formMessage.innerHTML = '';
+
+        try {
+            // Send email using EmailJS
+            const result = await emailjs.sendForm(
+                'abhieshek11',           // Service ID
+                'template_xq5byie',     // Template ID
+                contactForm             // Form element
+            );
+
+            // Success message
+            formMessage.innerHTML = `
+                    <div class="success-message">
+                        <i class="fas fa-check-circle"></i>
+                        Thank you! Your message has been sent successfully. I'll get back to you soon.
+                    </div>
+                `;
+            contactForm.reset();
+
+        } catch (error) {
+            console.error('EmailJS Error:', error);
+
+            // Error message
+            formMessage.innerHTML = `
+                    <div class="error-message">
+                        <i class="fas fa-exclamation-circle"></i>
+                        Sorry, there was an error sending your message. Please try again or contact me directly.
+                    </div>
+                `;
+        } finally {
+            // Reset button state
+            submitBtn.disabled = false;
+            document.querySelector('.btn-text').style.display = 'inline';
+            document.querySelector('.btn-loading').style.display = 'none';
+        }
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+</script>
+</body>
+
+</html>

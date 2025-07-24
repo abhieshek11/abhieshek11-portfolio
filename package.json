@@ -1,0 +1,30 @@
+{
+  "name": "abhishek-portfolio-website",
+  "version": "1.0.0",
+  "description": "Professional portfolio website for Abhishek Kumar with working contact form",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000",
+    "build": "echo 'Build complete - Static website ready for deployment'",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "abhishek-kumar",
+    "developer",
+    "ai-enthusiast",
+    "contact-form",
+    "emailjs"
+  ],
+  "author": "Abhishek Kumar <abhieshek11@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abhieshek11/portfolio"
+  },
+  "homepage": "https://abhishek-portfolio.vercel.app"
+}
